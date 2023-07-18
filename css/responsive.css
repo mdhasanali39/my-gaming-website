@@ -1,0 +1,31 @@
+/* mobile large responsive styling start  */
+@media screen and (max-width: 425px) {
+    .navbar, .nav-items{
+        flex-direction: column;
+    }
+    .navbar{
+        padding: 30px 0;
+    }
+    .logo-container {
+        margin-bottom: 50px;
+    }
+    .logo-container img {
+        width: 27%;
+      }
+    .banner{
+        flex-direction: column-reverse;
+        padding: 0 20px;
+    }
+    .banner-content-box{
+        padding-top: 100px;
+    }
+    .banner-title-1 {
+        font-size: 40px;
+      }
+      .banner-title-2 {
+        font-size: 78px;
+      }
+      .sign-in-btn, .go-rogue-btn{
+        font-size: 18px;
+      }
+}
