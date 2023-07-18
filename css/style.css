@@ -1,0 +1,81 @@
+/* Imported fonts from google fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap");
+
+/* Usability start  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.specific-span {
+  background-image: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Usability end  */
+
+/* header section styling start  */
+
+/* navbar styling start  */
+.navbar {
+  padding: 38px 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+/* logo here  */
+.logo-container {
+  color: #0b0223;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+}
+.logo-container img {
+  width: 30%;
+}
+/* nav items here  */
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.nav-items li a {
+  color: #3c354f;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+.nav-items .follow-us {
+  display: flex;
+  align-items: center;
+  background-color: rgba(11, 2, 35, 0.1);
+  padding: 17px 24px;
+  border-radius: 8px;
+}
+.follow-us .follow-us-text {
+  margin-right: 24px;
+  color: #3c354f;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+.nav-items .follow-us .fa-youtube {
+  color: #ff0000;
+  font-size: 24px;
+}
+.nav-items .follow-us .fa-tiktok {
+  margin-left: 16px;
+  font-size: 18px;
+}
