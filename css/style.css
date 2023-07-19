@@ -93,10 +93,12 @@ a {
 .nav-items .follow-us .fa-youtube {
   color: #ff0000;
   font-size: 24px;
+  cursor: pointer;
 }
 .nav-items .follow-us .fa-tiktok {
   margin-left: 16px;
   font-size: 18px;
+  cursor: pointer;
 }
 /* banner section styling start  */
 .banner {
@@ -195,7 +197,8 @@ a {
   width: 100%;
   /* height: 100%; */
 }
-.game-card-img-wrapper, .game-card-img-wrapper-with-border {
+.game-card-img-wrapper,
+.game-card-img-wrapper-with-border {
   position: relative;
 }
 .online-games-cards .game-card-img-wrapper::after {
@@ -223,10 +226,26 @@ a {
   opacity: 0;
   transition: opacity 0.2s linear;
 }
+.overlay-title{
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 120%);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.2s .2s linear;
+}
 .game-card-img-wrapper:hover::after {
   opacity: 1;
 }
 .game-card-img-wrapper:hover .game-card-play-icon {
+  opacity: 1;
+}
+.game-card-img-wrapper:hover .overlay-title{
   opacity: 1;
 }
 .online-games-cards .game-card-img-wrapper-with-border::after {
@@ -242,17 +261,23 @@ a {
   cursor: pointer;
   transition: opacity 0.2s linear;
 }
-.game-card-img-wrapper-with-border:hover::after{
+.game-card-img-wrapper-with-border:hover::after {
   opacity: 1;
 }
-.game-card-img-wrapper-with-border:hover .game-card-play-icon{
+.game-card-img-wrapper-with-border:hover .game-card-play-icon {
   opacity: 1;
 }
+.game-card-img-wrapper-with-border:hover .overlay-title{
+  opacity: 1;
+}
+
+
 .game-card-title {
   color: #534c64;
   font-size: 20px;
   font-weight: 500;
   line-height: 30px;
+  margin-top: 10px;
 }
 
 /* play instantly section styling start  */
