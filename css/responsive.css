@@ -158,10 +158,10 @@
   }
   /* action section  */
   .action-rectangle-boxes {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 48px);
     padding: 0 20px;
-    gap: 11px;
+    gap: 17px;
   }
   .action-rectangle-boxes .box {
     width: auto;
