@@ -233,7 +233,7 @@ a {
   gap: 32px;
 }
 .play-instantly-texbox,
- .play-instantly-imgs{
+.play-instantly-imgs {
   flex-basis: 50%;
 }
 .play-instantly-title {
@@ -252,15 +252,113 @@ a {
   line-height: 30px;
   width: 65%;
 }
-.play-instantly-imgs{
-  position: relative;  
+.play-instantly-imgs {
+  position: relative;
 }
 .play-instantly-imgs .play-instantly-big-img {
   width: 100%;
 }
-.play-instantly-imgs .play-instantly-small-img{
+.play-instantly-imgs .play-instantly-small-img {
   width: 50%;
   position: absolute;
   left: -23.5%;
   bottom: -15%;
+}
+/* action section styling start  */
+.action-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+.action-rectangle-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, max-content));
+  /* grid-template-rows: repeat(3, 1fr); */
+  justify-content: center;
+  /* align-content: center; */
+  gap: 34px;
+}
+.action-rectangle-boxes .box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 5px 10px;
+  border-radius: 50px;
+  width: max-content;
+  outline-color: #ff42a5;
+  transition: outline 1s linear;
+}
+/* hover effect */
+.action-rectangle-boxes .box:hover {
+  outline: 1px solid #ff42a5;
+}
+.action-rectangle-boxes .box img {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+.action-rectangle-boxes .box p a {
+  color: #0b0223;
+  font-size: 18px;
+  font-weight: 600;
+  transition: color 0.2s linear;
+}
+/* hover effect */
+.action-rectangle-boxes .box:hover p a {
+  color: #ff42a5;
+}
+/* footer section styling start  */
+.footer {
+  background-color: #0b0223;
+  color: #fff;
+  display: flex;
+  gap: 60px;
+  flex-direction: column;
+  text-align: center;
+  padding: 70px 0 55px;
+}
+/* footer logo here  */
+.footer-logo-container {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+}
+.footer-logo-container img {
+  width: 5%;
+}
+.useful-shortcut {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+.useful-shortcut li a {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.social-links .fa-brands {
+  font-size: 35px;
+}
+.useful-links {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+.useful-links li a {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+.footer-text {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-weight: 500;
+  margin-top: -30px;
 }
