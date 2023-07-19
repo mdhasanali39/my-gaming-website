@@ -195,7 +195,7 @@ a {
   width: 100%;
   /* height: 100%; */
 }
-.game-card-img-wrapper {
+.game-card-img-wrapper, .game-card-img-wrapper-with-border {
   position: relative;
 }
 .online-games-cards .game-card-img-wrapper::after {
@@ -203,10 +203,14 @@ a {
   width: 100%;
   height: 99.5%;
   border-radius: 16px;
+  border: 1px solid #ff42a5;
   background-color: #00000075;
   position: absolute;
   top: 0px;
   left: 0;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.2s linear;
 }
 .game-card-play-icon {
   width: 48px;
@@ -216,6 +220,33 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+}
+.game-card-img-wrapper:hover::after {
+  opacity: 1;
+}
+.game-card-img-wrapper:hover .game-card-play-icon {
+  opacity: 1;
+}
+.online-games-cards .game-card-img-wrapper-with-border::after {
+  content: "";
+  width: 100%;
+  height: 99.5%;
+  border-radius: 16px;
+  background-color: #00000075;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.2s linear;
+}
+.game-card-img-wrapper-with-border:hover::after{
+  opacity: 1;
+}
+.game-card-img-wrapper-with-border:hover .game-card-play-icon{
+  opacity: 1;
 }
 .game-card-title {
   color: #534c64;
@@ -223,6 +254,7 @@ a {
   font-weight: 500;
   line-height: 30px;
 }
+
 /* play instantly section styling start  */
 .play-instantly-section {
   display: flex;
@@ -259,6 +291,10 @@ a {
   width: 100%;
 }
 .play-instantly-imgs .play-instantly-small-img {
+  border: 1px solid rgb(218, 216, 216);
+  border-radius: 10px;
+  border-top: none;
+  border-right: none;
   width: 50%;
   position: absolute;
   left: -23.5%;
@@ -343,7 +379,8 @@ a {
   gap: 40px;
 }
 .social-links .fa-brands {
-  font-size: 35px;
+  font-size: 30px;
+  color: #fff;
 }
 .useful-links {
   display: flex;
