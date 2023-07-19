@@ -1,5 +1,6 @@
 /* tablet responsive styling start  */
 @media screen and (max-width: 768px) {
+  /* header section  */
   .navbar {
     flex-direction: column;
   }
@@ -10,15 +11,26 @@
     flex-direction: column-reverse;
     padding: 0 20px;
   }
-  .banner{
+  .banner {
     margin-top: 70px;
   }
   .banner-content-box {
     padding-top: 100px;
   }
+  /* online game funny videos section  */
+  .online-games-funny-section {
+    padding: 0 20px;
+  }
+  .online-games-cards {
+    flex-wrap: wrap;
+  }
+  .online-games-cards .game-card {
+    flex-basis: calc((100% - 30px) / 2);
+  }
 }
 /* mobile large responsive styling start  */
 @media screen and (max-width: 425px) {
+  /* header section  */
   .navbar,
   .nav-items {
     flex-direction: column;
@@ -27,7 +39,7 @@
     padding: 30px 0;
   }
   .logo-container {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
   .logo-container img {
     width: 27%;
@@ -37,7 +49,7 @@
     padding: 0 20px;
   }
   .banner-content-box {
-    padding-top: 100px;
+    padding: 80px 50px 0;
   }
   .banner-title-1 {
     font-size: 40px;
@@ -47,6 +59,35 @@
   }
   .sign-in-btn,
   .go-rogue-btn {
+    font-size: 16px;
+    padding: 16px 24px;
+  }
+  /* online game funny videos section  */
+  .online-games-funny-section {
+    padding: 0 20px;
+  }
+  .online-games-cards {
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+  }
+  .online-games-cards .game-card {
+    flex-basis: calc((100% - 30px) / 1);
+  }
+  .game-card-title {
+    text-align: center;
+    margin-top: 15px;
+  }
+  .online-games-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .specific-span-2 {
+    font-size: 40px;
+  }
+  .online-games-description {
     font-size: 18px;
+    width: 75%;
+    margin: 0 auto;
   }
 }
