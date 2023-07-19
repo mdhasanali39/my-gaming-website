@@ -27,6 +27,32 @@
   .online-games-cards .game-card {
     flex-basis: calc((100% - 30px) / 2);
   }
+  /* play instantly section */
+  .play-instantly-section {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .play-instantly-title {
+    text-align: center;
+    font-size: 40px;
+    width: 100%;
+    margin: 0 auto 27px;
+  }
+  .play-instantly-description {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .play-instantly-imgs .play-instantly-big-img {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .play-instantly-imgs .play-instantly-small-img {
+    width: 35%;
+    left: -0.5%;
+    bottom: -15%;
+  }
 }
 /* mobile large responsive styling start  */
 @media screen and (max-width: 425px) {
@@ -89,5 +115,30 @@
     font-size: 18px;
     width: 75%;
     margin: 0 auto;
+  }
+  /* play instantly section */
+  .play-instantly-section {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .play-instantly-title {
+    text-align: center;
+    width: 92%;
+    margin: 0 auto 27px;
+  }
+  .play-instantly-description {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .play-instantly-imgs .play-instantly-big-img {
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+  }
+  .play-instantly-imgs .play-instantly-small-img {
+    width: 30%;
+    left: -0.5%;
+    bottom: -15%;
   }
 }

@@ -226,15 +226,23 @@ a {
 /* play instantly section styling start  */
 .play-instantly-section {
   display: flex;
+  align-items: center;
   max-width: 1100px;
   margin: 0 auto;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
+  gap: 32px;
+}
+.play-instantly-texbox,
+ .play-instantly-imgs{
+  flex-basis: 50%;
 }
 .play-instantly-title {
   text-align: right;
   font-size: 48px;
   font-weight: 700;
   line-height: 60px;
+  width: 65%;
+  margin-bottom: 20px;
 }
 .play-instantly-description {
   color: #534c64;
@@ -242,7 +250,17 @@ a {
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
+  width: 65%;
 }
-.play-instantly-imgs img {
+.play-instantly-imgs{
+  position: relative;  
+}
+.play-instantly-imgs .play-instantly-big-img {
   width: 100%;
+}
+.play-instantly-imgs .play-instantly-small-img{
+  width: 50%;
+  position: absolute;
+  left: -23.5%;
+  bottom: -15%;
 }
