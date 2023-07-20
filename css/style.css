@@ -47,7 +47,7 @@ a {
 }
 /* navbar styling start  */
 .navbar {
-  padding: 30px 120px;
+  padding: 30px 75px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -102,14 +102,14 @@ a {
 }
 /* banner section styling start  */
 .banner {
-  padding: 0 120px;
+  padding: 0 75px;
   display: flex;
   align-items: center;
   gap: 10px;
   min-height: 547px;
   background-image: url("../images/Group\ 14.png");
   background-repeat: no-repeat;
-  background-size: 52%;
+  background-size: 53%;
   background-origin: border-box;
   background-position: center left, top left;
 }
@@ -118,17 +118,14 @@ a {
   flex-basis: 50%;
   height: 100%;
 }
-/* .banner-content-box{
-  
-} */
 .banner-title-1 {
   color: #0b0223;
-  font-size: 45px;
+  font-size: 44px;
   font-weight: 600;
   text-transform: uppercase;
 }
 .banner-title-2 {
-  font-size: 87px;
+  font-size: 75px;
   font-weight: 800;
   text-transform: uppercase;
   background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
@@ -160,12 +157,61 @@ a {
   background-color: #4ec5f7;
 }
 .banner-img img {
-  width: 100%;
+  width: 93%;
   height: 100%;
-  margin-bottom: -32px;
+  margin-bottom: -31px;
 }
 
 /* main tag styling start  */
+
+/* we are gamer section styling start  */
+.we-are-gamer-section {
+  /* max-width: 1200px;
+  margin: 0 auto; */
+  padding: 50px 75px;
+  margin-bottom: 100px;
+  display: flex;
+  background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+.we-are-gamer-img img {
+  width: 160%;
+}
+.we-are-gamer-contentbox {
+  text-align: right;
+}
+.we-are-gamer-title {
+  font-size: 48px;
+  font-weight: 700;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.we-are-gamer-description {
+  color: #534c64;
+  font-size: 18px;
+  line-height: 30px;
+  width: 59%;
+  margin: 0 0 0 auto;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+.we-are-gamer-btn {
+  background: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+}
+.our-purpose {
+  color: #534c64;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 45px;
+  margin-top: 24px;
+}
+.title-unless {
+  color: #534c64;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 45px;
+}
 
 /* online game funny videos section styling start  */
 .online-games-funny-section {
@@ -346,7 +392,7 @@ a {
   width: 225px;
   height: 75px;
   flex-shrink: 0; /* default value 1*/
-  display: flex; 
+  display: flex;
   align-items: center;
   column-gap: 15px;
   border-radius: 50px;

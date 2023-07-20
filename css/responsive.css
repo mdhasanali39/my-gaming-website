@@ -25,6 +25,21 @@
     width: 90%;
   }
 
+  /* we are gamer section  */
+  .we-are-gamer-section{
+    flex-direction: column;
+    padding: 50px 20px;
+  }
+  .we-are-gamer-img img {
+    width: 100%;
+  }
+  .we-are-gamer-contentbox{
+    text-align: center;
+  }
+  .we-are-gamer-description{
+    width: 100%;
+  }
+
   /* online game funny videos section  */
   .online-games-funny-section {
     padding: 0 20px;
