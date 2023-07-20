@@ -82,6 +82,9 @@
   .useful-links {
     flex-wrap: wrap;
   }
+  .footer-logo-container img {
+    width: 10%;
+  }
 }
 
 /* mobile large responsive styling start  */
